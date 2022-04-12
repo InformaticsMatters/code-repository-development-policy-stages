@@ -1,25 +1,30 @@
 # Code Repository Development Policy Stages
 
 A definition of the requirements that need to be satisfied
-for our code repositories to meet various levels of _development stages_
-designed to indicate the 'product worthiness' of the code they contain.
+for our code repositories to meet various levels of _development_ (_stages_),
+with each new stage designed to illustrate increasing 'product worthiness'
+of the code the repository contains.
 
-It is natual for all code to start as an early implementation of a
-design or concept. Initial implementations are often prototypes or
-proof of concepts where features appear and disappear quickly where
-development practices are often deliberately relaxed.
+It is natual for all code to start as an 'rough and ready' implementation of a
+design or concept. Initial implementations are often hampered is 'bogged-down'
+with too much process. Process that's unnecessary when you're simply building
+an experimental prototype or proof of concept, where features appear and
+disappear quickly. Here, development practices are often deliberately relaxed.
 
 At some stage in the code's lifetime it becomes _valuable_ and the desire
 to control its behaviour becomes as important (or more important)
-that enhancing it. As code repository development practices evolve and
-vary considerably, often based on the programming language, we wanted to define
-a set of rules that could be used to classify each of our repositories
-using a set of rules that we consider indicate the repository's
-_product worthiness_.
+that enhancing it. As the development processes within these repositories
+evolve, and may also vary considerably, we need to define a common set of rules
+that could be used by any codebase, rules that can help provide consistency
+across repositories and help the observer and developer understand
+how the code is written, tested, built and delivered. As development matures
+we want to see each code-base follow a process pattern where what's produced
+and how it's used become a common pattern of increasing consistency and
+quality.
 
 That's what this document is about - identifying a small number of "stages"
-that a repository is expected to pass through on it's journey from
-_prototype to product_.
+that a repository is expected to reach on it's journey from a
+prototype to a product.
 
 # 1.0.0-alpha.1
 
@@ -37,39 +42,42 @@ stage number, the more demanding the policy.
     “SHOULD NOT”, “RECOMMENDED”, “MAY”, and “OPTIONAL” in this document are to
     be interpreted as described in [RFC 2119].
 
-## Policy Stage 0
+## Stage 0
 Repositories at **Stage 0** are the weakest in terms of policies. They
 are repositories that represent legacy code that would be expensive to or
 offer very little value in migrating to a higher policy or are early
 representations of code, expected to migrate to higher stages as their features
 evolve. For agility the policy demands on Stage 0 are deliberately weak.
 
+By default, all code repositories satisfy state 0.
+
 1. The repository **SHOULD** have a README file in the root of the repository
-2. The repository **SHOULD** display our "Policy Stage: 0" badge
+2. The repository **SHOULD** display our "Stage: 0" badge
    in the repo's natural root README file
 
 >   **Summary**: In order to understand how to contribute to or use a "Stage 0"
-    repository you are likely to need to talk to the author
+    repository you are likely to need to talk to the author. Process is weak
+    inconsistent and the build, test and delivery may be unclear
 
 Use the badge in your project's README.md:
 ```md
-[![Policy Stage: 0](https://img.shields.io/badge/Policy%20Stage-&#9734;&#9734;&#9734;-dc332e)](https://github.com/InformaticsMatters/code-repository-development-policy-stages)
+[![Policy Stage: 0](https://img.shields.io/badge/policy%20stage-&#9734;&#9734;&#9734;-dc332e)](https://github.com/InformaticsMatters/code-repository-development-policy-stages)
 ```
 
 Using the badge in README.rst:
 ```doctest
-.. image:: https://img.shields.io/badge/Policy%20Stage-&#9734;&#9734;&#9734;-dc332e
+.. image:: https://img.shields.io/badge/policy%20stage-&#9734;&#9734;&#9734;-dc332e
     :target: https://github.com/InformaticsMatters/code-repository-development-policy-stages
 
 ```
 
 Which looks like this:
-![Policy Stage: 0](https://img.shields.io/badge/Policy%20Stage-&#9734;&#9734;&#9734;-dc332e)
+![Policy Stage: 0](https://img.shields.io/badge/policy%20stage-&#9734;&#9734;&#9734;-dc332e)
 
-> Repositories that have no badge SHOULD be considered "Policy Stage 0" repositories.
+> Repositories that have no badge SHOULD be considered "Stage 0" repositories.
 
-## Policy Stage 1
-1. Repository **MUST** adopt our Conventional Commit message policy
+## Stage 1
+1. The repository **MUST** adopt our [Conventional Commit] message policy
 2. Automated validation of the commit message MUST be implemented.
    This will normally be achieved using git's pre-commit hooks typically 
    automatically configured using [pre-commit] and its corresponding
@@ -77,8 +85,8 @@ Which looks like this:
 3. The repository **MUST** have a README file in the root of the repository
 4. The repository **MUST** clearly identify the repository build artefacts,
    i.e. how the code manifests itself (i.e. as a container image)
-   and instructions for building and publishing them
-5  The repository **MUST** display our "Policy Stage: 1" badge
+   and instructions for building and publishing the artefacts
+5  The repository **MUST** display our "Stage: 1" badge
    in the repo's natural root README file
 
 >   **Summary**: Commit messages conform to a standard, are enforced automatically,
@@ -86,20 +94,20 @@ Which looks like this:
 
 Use the badge in your project's README.md:
 ```md
-[![Policy Stage: 1](https://img.shields.io/badge/Policy%20Stage-&#9733;&#9734;&#9734;-dc332e)](https://github.com/InformaticsMatters/code-repository-development-policy-stages)
+[![Policy Stage: 1](https://img.shields.io/badge/policy%20stage-&#9733;&#9734;&#9734;-dc332e)](https://github.com/InformaticsMatters/code-repository-development-policy-stages)
 ```
 
 Using the badge in README.rst:
 ```doctest
-.. image:: https://img.shields.io/badge/Policy%20Stage-&#9733;&#9734;&#9734;-dc332e
+.. image:: https://img.shields.io/badge/policy%20stage-&#9733;&#9734;&#9734;-dc332e
     :target: https://github.com/InformaticsMatters/code-repository-development-policy-stages
 
 ```
 
 Which looks like this:
-![Policy Stage: 0](https://img.shields.io/badge/Policy%20Stage-&#9733;&#9734;&#9734;-dc332e)
+![Policy Stage: 0](https://img.shields.io/badge/policy%20stage-&#9733;&#9734;&#9734;-dc332e)
 
-## Policy Stage 2
+## Stage 2
 - The repository **MUST** satisfy all the policies defined in "Stage 1"
 - The repository **MUST** employ CI/CD to build and publish the repo's artefacts
   For GitHub this will be the use of _Actions_ located in the repository's
@@ -117,20 +125,20 @@ Which looks like this:
 
 Use the badge in your project's README.md:
 ```md
-[![Policy Stage: 1](https://img.shields.io/badge/Policy%20Stage-&#9733;&#9733;&#9734;-dc332e)](https://github.com/InformaticsMatters/code-repository-development-policy-stages)
+[![Policy Stage: 1](https://img.shields.io/badge/policy%20stage-&#9733;&#9733;&#9734;-dc332e)](https://github.com/InformaticsMatters/code-repository-development-policy-stages)
 ```
 
 Using the badge in README.rst:
 ```doctest
-.. image:: https://img.shields.io/badge/Policy%20Stage-&#9733;&#9733;&#9734;-dc332e
+.. image:: https://img.shields.io/badge/policy%20stage-&#9733;&#9733;&#9734;-dc332e
     :target: https://github.com/InformaticsMatters/code-repository-development-policy-stages
 
 ```
 
 Which looks like this:
-![Policy Stage: 0](https://img.shields.io/badge/Policy%20Stage-&#9733;&#9733;&#9734;-dc332e)
+![Policy Stage: 0](https://img.shields.io/badge/policy%20stage-&#9733;&#9733;&#9734;-dc332e)
 
-## Policy Stage 3
+## Stage 3
 - The repository **MUST** satisfy all the policies defined in "Stage 3"
 - The repository **MUST** declare a code style guide
 - The repository **MUST** contain unit tests and publish code coverage figures
@@ -158,18 +166,18 @@ Which looks like this:
 
 Use the badge in your project's README.md:
 ```md
-[![Policy Stage: 1](https://img.shields.io/badge/Policy%20Stage-&#9733;&#9733;&#9733;-dc332e)](https://github.com/InformaticsMatters/code-repository-development-policy-stages)
+[![Policy Stage: 1](https://img.shields.io/badge/policy%20stage-&#9733;&#9733;&#9733;-dc332e)](https://github.com/InformaticsMatters/code-repository-development-policy-stages)
 ```
 
 Using the badge in README.rst:
 ```doctest
-.. image:: https://img.shields.io/badge/Policy%20Stage-&#9733;&#9733;&#9733;-dc332e
+.. image:: https://img.shields.io/badge/policy%20stage-&#9733;&#9733;&#9733;-dc332e
     :target: https://github.com/InformaticsMatters/code-repository-development-policy-stages
 
 ```
 
 Which looks like this:
-![Policy Stage: 0](https://img.shields.io/badge/Policy%20Stage-&#9733;&#9733;&#9733;-dc332e)
+![Policy Stage: 0](https://img.shields.io/badge/policy%20stage-&#9733;&#9733;&#9733;-dc332e)
 
 ## References
 
