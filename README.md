@@ -1,15 +1,33 @@
-# Code Repository Development Policy Stages 1.0.0-alpha.1
+# Code Repository Development Policy Stages
 
 A definition of the requirements that need to be satisfied
-for code repositories we to meet specific _development stages_. Code
-naturally passes through conceptual and prototype stages where development
-practices are often more relaxed before entering a more mature 'production
-quality' stage usually associated with the delivering and maintenance
-of the code artefacts.
+for our code repositories to meet various levels of _development stages_
+designed to indicate the 'product worthiness' of the code they contain.
+
+It is natual for all code to start as an early implementation of a
+design or concept. Initial implementations are often prototypes or
+proof of concepts where features appear and disappear quickly where
+development practices are often deliberately relaxed.
+
+At some stage in the code's lifetime it becomes _valuable_ and the desire
+to control its behaviour becomes as important (or more important)
+that enhancing it. As code repository development practices evolve and
+vary considerably, often based on the programming language, we wanted to define
+a set of rules that could be used to classify each of our repositories
+using a set of rules that we consider indicate the repository's
+_product worthiness_.
+
+That's what this document is about - identifying a small number of "stages"
+that a repository is expected to pass through on it's journey from
+_prototype to product_.
+
+# 1.0.0-alpha.1
+
+**DOCUMENT UNDER REVIEW**
 
 The stages defined here help viewers and contributors understand what is
 needed from them if they contribute to the code and also how they can expect
-the code to be built, published and deployed. Once the user understand the
+the code to be built, published and deployed. Once the user understands the
 stage they should be able to understand how to use the repository.
 
 We have defined four policy stages, numbered 0 to 3. The higher the
