@@ -10,7 +10,7 @@ of the code artefacts.
 The stages defined here help viewers and contributors understand what is
 needed from them if they contribute to the code and also how they can expect
 the code to be built, published and deployed. Once the user understand the
-stage they should be able to understand how to use the repsository.
+stage they should be able to understand how to use the repository.
 
 We have defined four policy stages, numbered 0 to 3. The higher the
 stage number, the more demanding the policy.
@@ -87,9 +87,11 @@ Which looks like this:
   For GitHub this will be the use of _Actions_ located in the repository's
   `.github/workflows` directory. For GitLab this will be the use
   of a `github-ci.yml` script
-- The repository **MUST** document a branch and tag policy
+- The repository **MUST** document a branch policy
+- Software releases **MUST** be supported, using semantic versioning
+  to tag each release 
 - The repository **SHOULD** declare a code style guide
-- The repository **SHOULD** contain unit tests
+- The repository **SHOULD** contain [Unit tests]
 
 >   **Summary**: Commit messages conform to a standard, are enforced automatically,
     repository artefacts are built automatically and a development (branch and tag)
@@ -122,12 +124,19 @@ Which looks like this:
 - The repository **MUST** employ a continuous delivery mechanism that
   is documented and able to deploy to a multiple sites (typically at least
   a staging and production site)
-- The CI/CD process **SHOULD** contain enhanced Functional testing where appropriate
+- The repository **MUST** contain a CHANGELOG that is constructed automatically
+  from the content of commit messages. If you use [Commitizen] as a tool
+  to generate the CHANGELOG our [.cz.yaml] configuration file will be of value -
+  it recognizes the commit message types and structures the CHANGELOG sections
+- The CHANGELOG content **MUST** contain details of every commit, regardless of
+  whether the change alters the code's behaviour. For example, documentation
+  and test changes must be present in the CHANGELOG file.
+- The CI/CD process **SHOULD** contain some [Functional tests] where appropriate
 
 >   **Summary**: The highest level of policy. Commit messages and code style
     conform to a standard, and are enforced automatically. Code is built
     and can be deployed automatically. Users will clearly understand what is built,
-    how it's built and how it's delivered
+    how it's built, how it's delivered, and what changes have been made
 
 Use the badge in your project's README.md:
 ```md
@@ -147,9 +156,14 @@ Which looks like this:
 ## References
 
 - Our [Conventional Commit style guide]
+- Commitizen [.cz.yaml] configuration
 
 ---
 
+[.cz.yaml]: https://gist.github.com/alanbchristie/19077203307101e9e9d52086488d4921
+[commitizen]: https://pypi.org/project/commitizen
 [conventional commit style guide]: https://discourse.squonk.it/t/conventional-commit-style-guide
+[functional tests]: https://en.wikipedia.org/wiki/Functional_testing
 [pre-commit]: https://pre-commit.com
 [rfc 2119]: https://www.ietf.org/rfc/rfc2119.txt
+[unit tests]: https://en.wikipedia.org/wiki/Unit_testing
