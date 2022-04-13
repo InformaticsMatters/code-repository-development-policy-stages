@@ -196,11 +196,16 @@ Which looks like this:
 - Our [Conventional Commit style guide]
 - Commitizen [.cz.yaml] configuration
 
+## Illustrative repositories
+
+- [data-manager-job-operator]
+
 ---
 
 [.cz.yaml]: https://gist.github.com/alanbchristie/19077203307101e9e9d52086488d4921
 [commitizen]: https://pypi.org/project/commitizen
 [conventional commit style guide]: https://discourse.squonk.it/t/conventional-commit-style-guide
+[data-manager-job-operator]: https://github.com/InformaticsMatters/data-manager-job-operator
 [functional tests]: https://en.wikipedia.org/wiki/Functional_testing
 [pre-commit]: https://pre-commit.com
 [rfc 2119]: https://www.ietf.org/rfc/rfc2119.txt
