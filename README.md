@@ -39,7 +39,7 @@ The rules focus on a generic set of processes that should be compatible with
 any software application. The rules help the observer and developer understand
 how the software is documented, written, tested, built and delivered.
 
-# Rules 1.0.0-alpha.1
+# 1.0.0-alpha.1 Rules 
 
 **DOCUMENT UNDER REVIEW**
 
@@ -68,18 +68,18 @@ For agility the policy demands for **Stage 0** are deliberately weak.
 
 Use the badge in your project's README.md:
 ```md
-[![Policy Stage: 0](https://img.shields.io/badge/policy%20stage-%280%29%20&#9734;&#9734;&#9734;-dc332e)](https://github.com/InformaticsMatters/code-repository-development-stages)
+[![Dev Stage: 0](https://img.shields.io/badge/dev%20stage-&#9734;&#9734;&#9734;%20%280%29-dc332e)](https://github.com/InformaticsMatters/code-repository-development-stages)
 ```
 
 Use the badge in your project's README.rst:
 ```doctest
-.. image:: https://img.shields.io/badge/policy%20stage-%280%29%20&#9734;&#9734;&#9734;-dc332e
+.. image:: https://img.shields.io/badge/dev%20stage-&#9734;&#9734;&#9734;%20%280%29-dc332e
     :target: https://github.com/InformaticsMatters/code-repository-development-stages
 
 ```
 
 Which looks like this:
-![Policy Stage: 0](https://img.shields.io/badge/policy%20stage-%280%29%20&#9734;&#9734;&#9734;-dc332e)
+![Dev Stage: 0](https://img.shields.io/badge/dev%20stage-&#9734;&#9734;&#9734;%20%280%29-dc332e)
 
 > Repositories that have no badge SHOULD be considered "Stage 0" repositories.
 
@@ -102,33 +102,33 @@ Which looks like this:
 
 Use the badge in your project's README.md:
 ```md
-[![Policy Stage: 1](https://img.shields.io/badge/policy%20stage-%281%29%20&#9733;&#9734;&#9734;-dc332e)](https://github.com/InformaticsMatters/code-repository-development-stages)
+[![Dev Stage: 1](https://img.shields.io/badge/dev%20stage-&#9733;&#9734;&#9734;%20%281%29-dc332e)](https://github.com/InformaticsMatters/code-repository-development-stages)
 ```
 
 Use the badge in README.rst:
 ```doctest
-.. image:: https://img.shields.io/badge/policy%20stage-%281%29%20&#9733;&#9734;&#9734;-dc332e
+.. image:: https://img.shields.io/badge/dev%20stage-&#9733;&#9734;&#9734;%20%281%29-dc332e
     :target: https://github.com/InformaticsMatters/code-repository-development-stages
 
 ```
 
 Which looks like this:
-![Policy Stage: 1](https://img.shields.io/badge/policy%20stage-%281%29%20&#9733;&#9734;&#9734;-dc332e)
+![Dev Stage: 1](https://img.shields.io/badge/dev%20stage-&#9733;&#9734;&#9734;%20%281%29-dc332e)
 
 ## Stage 2
-- The repository **MUST** satisfy all the policies defined in "Stage 1"
-- The repository **MUST** employ CI/CD to build and publish the repo's artefacts
-  For GitHub this will be the use of _Actions_ located in the repository's
-  `.github/workflows` directory. For GitLab this will be the use
-  of a `github-ci.yml` script
-- The repository **MUST** document a branch policy
-- Software releases **MUST** be identified using a release (GitHub) or
-  a tag (GitLab or GitHub)
-- Release numbers **MUST** us semantic versioning, and we typically support
-  3-digit (`1.0.0`) and 2-digit (`2022.1`) styles, including pre-release
-  conventions that introduce suffixes like `-rc.1`
-- The repository **SHOULD** declare a code style guide
-- The repository **SHOULD** contain and automatically run [Unit tests]
+1. The repository **MUST** satisfy all the policies defined in "Stage 1"
+2. The repository **MUST** employ CI/CD to build and publish the repo's artefacts
+   For GitHub this will be the use of _Actions_ located in the repository's
+   `.github/workflows` directory. For GitLab this will be the use
+   of a `github-ci.yml` script
+3. The repository **MUST** document a branch policy
+4. Software releases **MUST** be identified using a release (GitHub) or
+   a tag (GitLab or GitHub)
+5. Release numbers **MUST** us semantic versioning, and we typically support
+   3-digit (`1.0.0`) and 2-digit (`2022.1`) styles, including pre-release
+   conventions that introduce suffixes like `-rc.1`
+6. The repository **SHOULD** declare a code style guide
+7. The repository **SHOULD** contain and automatically run [Unit tests]
 
 >   **Stage Summary**: Commit messages conform to a standard, are enforced
     automatically, repository artefacts are built automatically and
@@ -137,39 +137,39 @@ Which looks like this:
 
 Use the badge in your project's README.md:
 ```md
-[![Policy Stage: 2](https://img.shields.io/badge/policy%20stage-%282%29%20&#9733;&#9733;&#9734;-dc332e)](https://github.com/InformaticsMatters/code-repository-development-stages)
+[![Dev Stage: 2](https://img.shields.io/badge/dev%20stage-&#9733;&#9733;&#9734;%20%282%29-dc332e)](https://github.com/InformaticsMatters/code-repository-development-stages)
 ```
 
 Use the badge in your project's README.rst:
 ```doctest
-.. image:: https://img.shields.io/badge/policy%20stage-%282%29%20&#9733;&#9733;&#9734;-dc332e
+.. image:: https://img.shields.io/badge/dev%20stage-&#9733;&#9733;&#9734;%20%282%29-dc332e
     :target: https://github.com/InformaticsMatters/code-repository-development-stages
 
 ```
 
 Which looks like this:
-![Policy Stage: 2](https://img.shields.io/badge/policy%20stage-%282%29%20&#9733;&#9733;&#9734;-dc332e)
+![Dev Stage: 2](https://img.shields.io/badge/dev%20stage-&#9733;&#9733;&#9734;%20%282%29-dc332e)
 
 ## Stage 3
-- The repository **MUST** satisfy all the policies defined in "Stage 3"
-- The repository **MUST** declare a code style guide
-- The repository **SHOULD** enforce the code style guide
-- The repository **MUST** automatically run linting tools that are recognised
-  by the community for the significant languages present in the repository.
-  For example, if a repository contains Java and YAML, the observer can expect 
-  to find linters for these language files.
-- The repository **SHOULD** publish test coverage statistics
-- The repository **MUST** contain clear instruction on how to use the artefacts
-  i.e. it must have a guide for deploying and using the artefacts
-- The repository **MUST** contain a CHANGELOG that is constructed automatically
-  from the content of commit messages. If you use [Commitizen] as a tool
-  to generate the CHANGELOG our [.cz.yaml] configuration file will be of value -
-  it recognizes the commit message types and structures the CHANGELOG sections
-  accordingly
-- The CHANGELOG content **MUST** contain details of every commit, regardless of
-  whether the change alters the code's behaviour. For example, documentation
-  and test changes must be present in the CHANGELOG file.
-- The repository **SHOULD** contain and automatically run [Functional tests]
+1. The repository **MUST** satisfy all the policies defined in "Stage 3"
+2. The repository **MUST** declare a code style guide
+3. The repository **SHOULD** enforce the code style guide
+4. The repository **MUST** automatically run linting tools that are recognised
+   by the community for the significant languages present in the repository.
+   For example, if a repository contains Java and YAML, the observer can expect 
+   to find linters for these language files.
+5. The repository **SHOULD** publish test coverage statistics
+6. The repository **MUST** contain clear instruction on how to use the artefacts
+   i.e. it must have a guide for deploying and using the artefacts
+7. The repository **MUST** contain a CHANGELOG that is constructed automatically
+   from the content of commit messages. If you use [Commitizen] as a tool
+   to generate the CHANGELOG our [.cz.yaml] configuration file will be of value -
+   it recognizes the commit message types and structures the CHANGELOG sections
+   accordingly
+8. The CHANGELOG content **MUST** contain details of every commit, regardless of
+   whether the change alters the code's behaviour. For example, documentation
+   and test changes must be present in the CHANGELOG file.
+9. The repository **SHOULD** contain and automatically run [Functional tests]
 
 >   **Summary**: A  strict set of policy rules. Commit messages and code style
     conform to a standard, and are enforced automatically. Code is built
@@ -178,18 +178,18 @@ Which looks like this:
 
 Use the badge in your project's README.md:
 ```md
-[![Policy Stage: 3](https://img.shields.io/badge/policy%20stage-%283%29%20&#9733;&#9733;&#9733;-dc332e)](https://github.com/InformaticsMatters/code-repository-development-stages)
+[![Dev Stage: 3](https://img.shields.io/badge/dev%20stage-&#9733;&#9733;&#9733;%20%283%29-dc332e)](https://github.com/InformaticsMatters/code-repository-development-stages)
 ```
 
 Use the badge in your project's README.rst:
 ```doctest
-.. image:: https://img.shields.io/badge/policy%20stage-%283%29%20&#9733;&#9733;&#9733;-dc332e
+.. image:: https://img.shields.io/badge/dev%20stage-&#9733;&#9733;&#9733;%20%283%29-dc332e
     :target: https://github.com/InformaticsMatters/code-repository-development-stages
 
 ```
 
 Which looks like this:
-![Policy Stage: 3](https://img.shields.io/badge/policy%20stage-%283%29%20&#9733;&#9733;&#9733;-dc332e)
+![Dev Stage: 3](https://img.shields.io/badge/dev%20stage-&#9733;&#9733;&#9733;%20%283%29-dc332e)
 
 ## References
 
