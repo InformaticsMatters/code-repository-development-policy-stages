@@ -68,18 +68,18 @@ For agility the policy demands for **Stage 0** are deliberately weak.
 
 Use the badge in your project's `README.md`:
 ```md
-[![Dev Stage: 0](https://img.shields.io/badge/dev%20stage-&#9734;&#9734;&#9734;%20%280%29-dc332e)](https://github.com/InformaticsMatters/code-repository-development-stages)
+[![Dev Stage: 0](https://img.shields.io/badge/dev%20stage-&#9734;&#9734;&#9734;%20%280%29-000000?labelColor=dc332e)](https://github.com/InformaticsMatters/code-repository-development-stages)
 ```
 
 Use the badge in your project's `README.rst`:
 ```doctest
-.. image:: https://img.shields.io/badge/dev%20stage-&#9734;&#9734;&#9734;%20%280%29-dc332e
+.. image:: https://img.shields.io/badge/dev%20stage-&#9734;&#9734;&#9734;%20%280%29-000000?labelColor=dc332e
     :target: https://github.com/InformaticsMatters/code-repository-development-stages
 
 ```
 
 Which looks like this:
-![Dev Stage: 0](https://img.shields.io/badge/dev%20stage-&#9734;&#9734;&#9734;%20%280%29-dc332e)
+![Dev Stage: 0](https://img.shields.io/badge/dev%20stage-&#9734;&#9734;&#9734;%20%280%29-000000?labelColor=dc332e)
 
 > Repositories that have no badge SHOULD be considered "Stage 0" repositories.
 
@@ -102,18 +102,18 @@ Which looks like this:
 
 Use the badge in your project's `README.md`:
 ```md
-[![Dev Stage: 1](https://img.shields.io/badge/dev%20stage-&#9733;&#9734;&#9734;%20%281%29-dc332e)](https://github.com/InformaticsMatters/code-repository-development-stages)
+[![Dev Stage: 1](https://img.shields.io/badge/dev%20stage-&#9733;&#9734;&#9734;%20%281%29-000000?labelColor=dc332e)](https://github.com/InformaticsMatters/code-repository-development-stages)
 ```
 
 Use the badge in your project's `README.rst`:
 ```doctest
-.. image:: https://img.shields.io/badge/dev%20stage-&#9733;&#9734;&#9734;%20%281%29-dc332e
+.. image:: https://img.shields.io/badge/dev%20stage-&#9733;&#9734;&#9734;%20%281%29-000000?labelColor=dc332e
     :target: https://github.com/InformaticsMatters/code-repository-development-stages
 
 ```
 
 Which looks like this:
-![Dev Stage: 1](https://img.shields.io/badge/dev%20stage-&#9733;&#9734;&#9734;%20%281%29-dc332e)
+![Dev Stage: 1](https://img.shields.io/badge/dev%20stage-&#9733;&#9734;&#9734;%20%281%29-000000?labelColor=dc332e)
 
 ## Stage 2
 1. The repository **MUST** satisfy all the policies defined in "Stage 1"
@@ -137,18 +137,18 @@ Which looks like this:
 
 Use the badge in your project's `README.md`:
 ```md
-[![Dev Stage: 2](https://img.shields.io/badge/dev%20stage-&#9733;&#9733;&#9734;%20%282%29-dc332e)](https://github.com/InformaticsMatters/code-repository-development-stages)
+[![Dev Stage: 2](https://img.shields.io/badge/dev%20stage-&#9733;&#9733;&#9734;%20%282%29-000000?labelColor=dc332e)](https://github.com/InformaticsMatters/code-repository-development-stages)
 ```
 
 Use the badge in your project's `README.rst`:
 ```doctest
-.. image:: https://img.shields.io/badge/dev%20stage-&#9733;&#9733;&#9734;%20%282%29-dc332e
+.. image:: https://img.shields.io/badge/dev%20stage-&#9733;&#9733;&#9734;%20%282%29-000000?labelColor=dc332e
     :target: https://github.com/InformaticsMatters/code-repository-development-stages
 
 ```
 
 Which looks like this:
-![Dev Stage: 2](https://img.shields.io/badge/dev%20stage-&#9733;&#9733;&#9734;%20%282%29-dc332e)
+![Dev Stage: 2](https://img.shields.io/badge/dev%20stage-&#9733;&#9733;&#9734;%20%282%29-000000?labelColor=dc332e)
 
 ## Stage 3
 1. The repository **MUST** satisfy all the policies defined in "Stage 2"
@@ -178,18 +178,18 @@ Which looks like this:
 
 Use the badge in your project's `README.md`:
 ```md
-[![Dev Stage: 3](https://img.shields.io/badge/dev%20stage-&#9733;&#9733;&#9733;%20%283%29-dc332e)](https://github.com/InformaticsMatters/code-repository-development-stages)
+[![Dev Stage: 3](https://img.shields.io/badge/dev%20stage-&#9733;&#9733;&#9733;%20%283%29-000000?labelColor=dc332e)](https://github.com/InformaticsMatters/code-repository-development-stages)
 ```
 
 Use the badge in your project's `README.rst`:
 ```doctest
-.. image:: https://img.shields.io/badge/dev%20stage-&#9733;&#9733;&#9733;%20%283%29-dc332e
+.. image:: https://img.shields.io/badge/dev%20stage-&#9733;&#9733;&#9733;%20%283%29-000000?labelColor=dc332e
     :target: https://github.com/InformaticsMatters/code-repository-development-stages
 
 ```
 
 Which looks like this:
-![Dev Stage: 3](https://img.shields.io/badge/dev%20stage-&#9733;&#9733;&#9733;%20%283%29-dc332e)
+![Dev Stage: 3](https://img.shields.io/badge/dev%20stage-&#9733;&#9733;&#9733;%20%283%29-000000?labelColor=dc332e)
 
 ## References
 
